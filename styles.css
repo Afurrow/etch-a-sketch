@@ -17,11 +17,31 @@ body {
     text-decoration: underline 5px;
 }
 
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+[type="button"] {
+    height: 35px;
+    width: 125px;
+    background-color: white;
+    border: none;
+    border-radius: 6px;
+    margin: auto 5px auto 5px;
+}
+
+[type="button"]:hover {
+    border: 3px solid cyan; 
+}
+
 .etchContainer {
     display: absolute;
     width: 750px;
     height: 500px;
     background-color: firebrick;
+    border: 2px solid black;
     border-radius: 10px;
     margin-top: 25px;
     box-shadow: 5px 5px darkslategray;
@@ -32,11 +52,14 @@ body {
     width: 600px;
     height: 350px;
     background-color: whitesmoke;
+    border: 3px solid black;
     border-radius: 10px;
-    margin: 75px auto 75px auto;
+    margin: 60px auto 0 auto;
 }
 
 .logo {
-    width: 100px;
-    height: auto;
+    display: block;
+    width: auto;
+    height: 65px;
+    margin: 12.5px auto 12.5px auto;
 }
